@@ -5,6 +5,7 @@ var randomized = require('./app.js');
 app.get('/', function (req, res) {
   res.send('Navigate to /random to get your string!');
 });
+
 app.get('/random', function (req, res) {
   res.send(randomized());
 });
